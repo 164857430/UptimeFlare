@@ -2,12 +2,12 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "Rafael's Status Page",
+  title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/164857430', label: 'GitHub' },
-    { link: 'https://ooh.pp.ua/', label: 'Nezha' },
-    { link: 'https://www.lll.hidns.vip/', label: '思维导图'},
+    { link: 'https://github.com/lyc8503', label: 'GitHub' },
+    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
+    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
   ],
   // [OPTIONAL] Group your monitors
   // If not specified, all monitors will be shown in a single list
@@ -77,12 +77,14 @@ const workerConfig: WorkerConfig = {
     },
     // Example TCP Monitor
     {
-      id: '9999',
-      name: '思维导图',
+      id: 'test_tcp_monitor',
+      name: 'Example TCP Monitor',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
+      method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://www.lll.hidns.vip',
+      target: '1.2.3.4:22',
+      tooltip: 'My production server SSH',
+      statusPageLink: 'https://example.com',
       timeout: 5000,
     },
   ],
