@@ -10,9 +10,9 @@ const pageConfig: PageConfig = {
   title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/164857430', label: 'GitHub' },
+    { link: 'https://ooh.pp.ua/', label: 'Nezha' },
+    { link: 'https://www.lll.hidns.vip/', label: '思维导图'},
   ],
 }
 
@@ -57,14 +57,12 @@ const workerConfig: WorkerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: '99999',
+      name: 'Monitor',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      target: 'https://www.lll.hidns.vip',
       timeout: 5000,
     },
   ],
